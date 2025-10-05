@@ -1,0 +1,315 @@
+%-------------------------
+% Resume in LaTeX - Combined Projects
+% Author: Harshit Kalucha
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Harshit Kalucha} \\ \vspace{3pt}
+    \textbf{\large AI Integration Engineer | Full-Stack Developer | Technical Writer} \\ \vspace{3pt}
+    \small +91-8447091711 | \href{mailto:kaluchaharshit22@gmail.com}{\underline{kaluchaharshit22@gmail.com}} | 
+    \href{https://linkedin.com/in/harshit-kalucha-49b197191}{\underline{LinkedIn}} | 
+    \href{https://github.com/harshit-coder}{\underline{GitHub}} | 
+    \href{https://harshitkalucha37271988.wordpress.com}{\underline{Blog}} \\
+    Delhi, India
+\end{center}
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Backend}{: Python | Django | Django Tenants | REST API | GraphQL | Flask | FastAPI | Celery | RabbitMQ | Prefect} \\
+     \textbf{Frontend}{: HTML | CSS | JavaScript | React | Next.js | Bootstrap} \\
+     \textbf{AI/ML}{: Machine Learning | Deep Learning | LLMs | NLP | Information Retrieval | Dense Text Retrieval | Knowledge Distillation | Cross-Encoders | Dual Encoders | LangChain | PyTorch | TensorFlow | Computer Vision | YOLO | FaceNet | Gemini} \\
+     \textbf{Database}{: PostgreSQL | MySQL | MongoDB | Redis | SQLite} \\
+     \textbf{Cloud \& DevOps}{: AWS (Lambda, EC2, EKS, S3) | Azure (Function App, Eventhub) | Docker | Kubernetes | GitHub Actions | Jenkins | Ansible | CI/CD Pipelines} \\
+     \textbf{Tools}{: Git | Selenium | Postman | Solr | SolrCloud | Zookeeper | Socket.IO | Fluentd}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AI Integration Engineer}{May 2024 -- Present}
+      {First Advantage}{Bengaluru, Karnataka, India}
+      \resumeItemListStart
+        \resumeItem{Built automated text extraction system using Prefect, Deepdoctection \& Azure services for criminal documents | Applied regex \& LLMs to identify/map key identifiers | Returned extracted data to client}
+        \resumeItem{Enhanced name matching using phonetic \& fuzzy algorithms | Leveraged LLMs for text extraction | Fetched criminal identifiers from court records}
+        \resumeItem{Developed NLP-based Azure Function App for employee-institute name matching | Analyzed text similarity algorithms | Created custom name embedding techniques}
+        \resumeItem{Fixed Kubernetes secret services issues | Managed on-premise deployment}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer}{April 2022 -- October 2025}
+      {NextGen Invent}{Noida, Uttar Pradesh, India}
+      \resumeItemListStart
+        \resumeItem{Restructured backend using Django-GraphQL \& PostgreSQL | Automated Postman testing with JavaScript | Integrated payment APIs (Stripe, PayPal, Trolley) | Resolved memory leaks | Deployed ASGI server using Gunicorn \& Uvicorn | Implemented Docker | Ensured secure payment data transmission}
+        \resumeItem{Developed login/logout features for React.js dashboard | Managed session storage \& Power BI tokens in local storage}
+        \resumeItem{Setup Solr Cloud \& Zookeeper ensemble using PowerShell \& Flask | Developed title scoring script using TF-IDF with penalty structures}
+        \resumeItem{Developed chatbot using LLAMA-2 \& Chainlit for enhanced processing speed \& efficiency}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full-Time Intern}{July 2021 -- January 2022}
+      {ZestIoT}{India}
+      \resumeItemListStart
+        \resumeItem{Developed real-time video uploading \& compression system using Flask, FastAPI \& Celery | Integrated RabbitMQ for notifications \& IoT edge server communication | Implemented image training using YOLO object detection}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Personal Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Fitometer - Gym Management System} $|$ \emph{Django Tenants, PostgreSQL, JWT}}{}
+          \resumeItemListStart
+            \resumeItem{Backend developer for multi-tenant gym management app | Implemented Django Tenants with separate PostgreSQL schemas per organization | Built authentication/authorization using JWT \& refresh tokens | Developed attendance tracking, employee management, member details \& exercise management | Deployed at fitometer.club}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Social Media Video Clip Generator} $|$ \emph{Gemini 2.0, FastAPI, Celery, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{AI-powered video analysis using Gemini 2.0 Flash for viral content detection | Built FastAPI async service with Celery \& Docker | Created 8 analysis modes (captions, summaries, key moments, tables, haikus, charts, custom prompts) | Developed gaming cutscene detection | Automated Instagram/YouTube Shorts generation from long-form videos}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Multi-Agent AI System} $|$ \emph{OpenAI Assistants API, Python}}{}
+          \resumeItemListStart
+            \resumeItem{Fixed critical bugs in LLM agent-based application using VRSEN/agency-swarm framework | Implemented CEO agent for task management, Developer agent for coding \& Virtual Assistant | Built agents with file operations, code execution \& terminal commands | Enabled multi-agent communication flows for workflow automation}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Face Detection \& Recognition} $|$ \emph{YOLOv8, FaceNet, TensorFlow, Django}}{}
+          \resumeItemListStart
+            \resumeItem{Django-based security camera facial recognition backend | Multi-model approach: YOLOv8 for detection, FaceNet for embeddings, InceptionV3 for verification | Cosine similarity-based matching with configurable thresholds | PostgreSQL storage for binary embeddings | Encrypted model files using Fernet cipher | Batch processing API}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{E-Commerce Platform Backend} $|$ \emph{Django, PayPal API, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Integrated PayPal payment gateway \& resolved payment issues | Setup three-tier environment (dev, staging, production) | Fixed email notification system | Managed team using Jira \& sprint planning | Built admin panel for website design management, products \& customer payments}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Custom Cloud Service Platform} $|$ \emph{Django, Express.js, RabbitMQ, MongoDB}}{}
+          \resumeItemListStart
+            \resumeItem{Built complete cloud service platform from scratch using microservice architecture | Implemented Socket.IO, consumer-producer pattern \& Express.js for async S3 bucket creation | Designed database structure using MongoDB \& PostgreSQL | Created Django admin tool for PostgreSQL management | Setup on-premise servers}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Python Training} $|$ \emph{Data Analysis, Data Science}}{}
+          \resumeItemListStart
+            \resumeItem{Corporate trainer teaching Python for data analysis \& data science | Conducted 1-2 month batches with hands-on practical sessions}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Serverless vs Server-full Comparison} $|$ \emph{FastAPI, Azure, AWS, JMeter}}{}
+          \resumeItemListStart
+            \resumeItem{Deployed identical apps: FastAPI (server-full) vs Azure Function App (serverless) | Setup AWS Lambda, DynamoDB \& Azure API Management | Conducted JMeter load testing to compare speed, performance \& pricing}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Text-to-Video GPU Processing Fix} $|$ \emph{GPU Computing, Video Processing}}{}
+          \resumeItemListStart
+            \resumeItem{Resolved critical code issues in production text-to-video conversion application running on GPU-enabled VMs | Ensured optimal performance on GPU infrastructure}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Frontend Token Management Fix} $|$ \emph{JavaScript, Token Management}}{}
+          \resumeItemListStart
+            \resumeItem{Diagnosed \& resolved critical token persistence issues in production frontend where authentication tokens were not being saved properly}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{AI-Powered LinkedIn Scraper for Job Analysis} $|$ \emph{Selenium, Qwen, Transformers}}{}
+          \resumeItemListStart
+            \resumeItem{Built 3 versions: basic scraper, llama.cpp integration \& Transformers (Qwen/Phi models) | Implemented undetected Chrome driver to bypass bot detection | Used local LLMs (Qwen 2.5) to identify hiring posts \& extract contact information | Automated email \& phone extraction with regex \& AI verification | Generated Excel reports \& PDF summaries with hiring statistics}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{AI Resume-Job Matcher} $|$ \emph{Django, Groq API, Streamlit}}{}
+          \resumeItemListStart
+            \resumeItem{PDF/DOCX/TXT resume parsing using pdfplumber \& python-docx | Groq API (gemma2-9b-it) for structured data extraction into JSON | Match scoring algorithm (0-100\%) for candidate-job compatibility | Personalized cover letter generation using LLMs | Django REST backend with JWT authentication \& Streamlit frontend}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Cryptocurrency Price Tracker} $|$ \emph{Python, CoinGecko API, Google Sheets}}{}
+          \resumeItemListStart
+            \resumeItem{CoinGecko API integration for real-time prices (BTC, ETH, XRP, LTC, ADA) | Google Sheets API with OAuth 2.0 for automated logging | Multi-environment support (DEV, STAGE, PROD) | Historical price tracking with timestamps}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{MetricMint - Statistics Publishing Platform} $|$ \emph{Django, Highcharts}}{}
+          \resumeItemListStart
+            \resumeItem{Data journalism platform with interactive visualization using Highcharts (30+ chart types) | CSV upload \& manual data entry | Full-text search across titles, descriptions, categories \& dates | Admin panel for content management | Search analytics | Deployed at metricmint.pythonanywhere.com}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Digimarket - E-Learning Platform} $|$ \emph{PHP, MySQL, Bootstrap}}{}
+          \resumeItemListStart
+            \resumeItem{Video-based e-learning with progress tracking | User authentication with session management \& view history | Admin panel for CRUD operations on courses, blogs \& projects | PHPMailer SMTP integration | Course categorization with multi-topic sequential learning}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{BPIBS College Placement Management} $|$ \emph{Django, Bootstrap, DataTables}}{}
+          \resumeItemListStart
+            \resumeItem{Student portal with profile management \& skill tracking | Placement officer dashboard with notification system \& student filtering | Interactive 3D charts using Highcharts | DataTables for sortable/searchable student data | Excel import/export using django-import-export \& openpyxl | Recruiter contact form}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{NGO Data Scraping Tool} $|$ \emph{Selenium, FastAPI, Pandas}}{}
+          \resumeItemListStart
+            \resumeItem{Selenium-based scraper for ngodarpan.gov.in with batch processing | FastAPI web interface with HTML templates | Background task processing with randomized delays | Excel export using openpyxl | JSON file storage}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{CourseDir - Educational Course Recommender} $|$ \emph{Django, jQuery, AJAX}}{}
+          \resumeItemListStart
+            \resumeItem{Timed quiz system with automatic skill level assessment | AJAX-based quiz submission | Personalized math course recommendations (Beginner/Intermediate/Advanced) | MixItUp.js for dynamic filtering | SMTP email integration}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{College Timetable Manager} $|$ \emph{Django, AdminLTE, SheetJS}}{}
+          \resumeItemListStart
+            \resumeItem{AJAX-based room availability checking to prevent conflicts | Multi-criteria search: room-wise, faculty-wise, course-wise | Client-side Excel export using SheetJS with automatic cell merging | Django inline formsets | AdminLTE dashboard}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Appointment Bot with Data Scraping} $|$ \emph{Python, Web Scraping}}{}
+          \resumeItemListStart
+            \resumeItem{Fixed fake email validation \& OTP security bugs | Web scraping for visa appointment availability | Database storage for appointment details}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------RESEARCH-----------
+\section{Research Work}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+      {\textbf{Dense Text Retrieval using Knowledge Distillation} $|$ \emph{PyTorch}}{}
+      \resumeItemListStart
+        \resumeItem{PhD research on Information Retrieval | Developing advanced models using Knowledge Distillation, Cross-Encoders \& Dual Encoders | Focus on improving dense retrieval performance for large-scale text search}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL WRITING-----------
+\section{Technical Writing \& Blogs}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+      {\textbf{WordPress Blog} $|$ \href{https://harshitkalucha37271988.wordpress.com}{\underline{harshitkalucha37271988.wordpress.com}}}{}
+      \resumeItemListStart
+        \resumeItem{Technical articles on software development, AI/ML \& emerging technologies}
+      \resumeItemListEnd
+  \resumeProjectHeading
+      {\textbf{LinkedIn Articles} $|$ Software Engineering Best Practices}{}
+      \resumeItemListStart
+        \resumeItem{Published "Centralized Exception Handling Using Middleware" \& other professional insights on Django, Python, AI/ML, Backend Development, Best Practices \& Problem Solving}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ph.D. in Computer Science}{July 2024 -- July 2028 (Expected)}
+      {Jaypee Institute of Information Technology}{India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Research Focus:} Information Retrieval, Dense Text Retrieval, Knowledge Distillation, Cross-Encoders, Dual Encoders}
+      \resumeItemListEnd
+    \resumeSubheading
+      {PG Diploma in Machine Learning \& NLP}{2023 -- 2024}
+      {DataTrained}{}
+    \resumeSubheading
+      {Master of Computer Applications (MCA)}{January 2019 -- June 2022}
+      {Bhai Parmanand Institute of Business Studies, GGSIPU}{}
+    \resumeSubheading
+      {Bachelor of Science - Physical Science (Electronics)}{2016 -- 2019}
+      {Atma Ram Sanatan Dharma College, University of Delhi}{}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications \& Training}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Full Stack Data Science \& Computer Vision (iNeuron) | Docker \& Git (iNeuron) | ReactJs, React Native \& GraphQL (Udemy) | Full Stack Python - Django (Ducat) | Prompt Engineering (Udemy)
+    }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
