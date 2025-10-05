@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harshit Kalucha - AI Integration Engineer, Full-Stack Developer & Technical Writer specializing in Python, Django, Machine Learning, Information Retrieval, and Cloud Solutions">
+    <meta name="keywords" content="AI Engineer, Python Developer, Django, Machine Learning, Freelance Developer, Full-Stack Developer, Technical Writer, Information Retrieval, PhD Researcher">
+        
+    <!-- LinkedIn Badge Script -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <title>Harshit Kalucha | AI Engineer & Full-Stack Developer</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --text-dark: #334155;
+            --text-light: #64748b;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--light);
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-dark);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            text-align: center;
+            z-index: 1;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            border: 2px solid white;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--dark);
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+        
+        .highlight-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .skill-card h3 {
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tag {
+            background: #e0e7ff;
+            color: var(--primary-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        /* Experience Section */
+        .experience-timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .company {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .role {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-content ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .timeline-content li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            position: relative;
+            color: var(--text-light);
+        }
+        
+        .timeline-content li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        /* Projects Section */
+        .projects-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--primary-color);
+            background: transparent;
+            color: var(--primary-color);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .project-header {
+            padding: 2rem;
+            background: var(--gradient);
+            color: white;
+        }
+        
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-type {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        
+        .project-body {
+            padding: 2rem;
+        }
+        
+        .project-description {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        /* Contact Section */
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+        
+        .contact-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+                display: none;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+            
+            .about-content,
+            .timeline-item {
+                grid-template-columns: 1fr;
+            }
+            
+            .highlight-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">HK</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Harshit Kalucha</h1>
+            <h2>AI Integration Engineer & Full-Stack Developer</h2>
+            <p>Transforming ideas into intelligent solutions | PhD Researcher in Information Retrieval | Technical Writer | Expert in AI/ML & Backend Development</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+                <a href="#blog" class="btn btn-secondary">Read Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Building Intelligent Solutions</h3>
+                    <p>I'm an AI Integration Engineer and Full-Stack Developer with 4+ years of expertise in Python, Django, Machine Learning, and Cloud Technologies. Currently pursuing Ph.D. in Computer Science, researching Information Retrieval with focus on Dense Text Retrieval using Knowledge Distillation, Cross-Encoders, and Dual Encoders.</p>
+                    <p>I specialize in building scalable backend systems, implementing AI/ML solutions, and solving complex technical challenges. I also share my knowledge through technical writing on WordPress and LinkedIn, covering topics in software development, AI/ML best practices, and problem-solving strategies.</p>
+                    <p>With experience across freelance projects, corporate roles, and research, I've delivered solutions ranging from multi-tenant SaaS platforms to AI-powered video analysis systems and information retrieval models.</p>
+                </div>
+                <div class="highlight-stats">
+                    <div class="stat">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">PhD</div>
+                        <div class="stat-label">Research Scholar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">GraphQL</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="tag">LLMs</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Information Retrieval</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">LangChain</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Knowledge Distillation</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">💾</div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Redis</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">CI/CD</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">Celery</span>
+                        <span class="tag">RabbitMQ</span>
+                        <span class="tag">Selenium</span>
+                        <span class="tag">Postman</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🔬</div>
+                    <h3>Research & Problem Solving</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Information Retrieval</span>
+                        <span class="tag">Dense Retrieval</span>
+                        <span class="tag">Cross-Encoders</span>
+                        <span class="tag">Dual Encoders</span>
+                        <span class="tag">Technical Writing</span>
+                        <span class="tag">Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div></div>
+                    <div class="timeline-content">
+                        <div class="company">First Advantage</div>
+                        <div class="role">AI Integration Engineer | May 2024 - Present</div>
+                        <ul>
+                            <li>Built PACER Identifier Extractor using Prefect, Deepdoctection, and Azure services</li>
+                            <li>Enhanced name matching using phonetic and fuzzy algorithms with LLMs</li>
+                            <li>Developed NLP-based Azure Function App for employee-institute matching</li>
+                            <li>Fixed Kubernetes deployment issues for AI-based verification routing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div></div>
+                    <div class="timeline-content">
+                        <div class="company">NextGen Invent</div>
+                        <div class="role">Software Developer | April 2022 - October 2025</div>
+                        <ul>
+                            <li>Restructured Social Travel App backend with Django-GraphQL and PostgreSQL</li>
+                            <li>Integrated payment APIs (Stripe, PayPal, Trolley) with secure transmission</li>
+                            <li>Built Cannabis Analytics Dashboard with React.js and Power BI integration</li>
+                            <li>Developed Search Engine using Solr Cloud and Zookeeper</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div></div>
+                    <div class="timeline-content">
+                        <div class="company">ZestIoT</div>
+                        <div class="role">Full-Time Intern | July 2021 - January 2022</div>
+                        <ul>
+                            <li>Developed No-Code AI Platform with real-time video processing</li>
+                            <li>Integrated RabbitMQ for IoT edge server communication</li>
+                            <li>Implemented YOLO object detection for image training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" onclick="filterProjects('all')">All Projects</button>
+                <button class="filter-btn" onclick="filterProjects('freelance')">Freelance</button>
+                <button class="filter-btn" onclick="filterProjects('personal')">Personal</button>
+                <button class="filter-btn" onclick="filterProjects('ai')">AI/ML</button>
+                <button class="filter-btn" onclick="filterProjects('research')">Research</button>
+            </div>
+            
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Freelance Projects -->
+                <div class="project-card" data-category="freelance ai">
+                    <div class="project-header">
+                        <h3 class="project-title">Social Media Video Clip Generator</h3>
+                        <p class="project-type">Freelance - AI Project</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">AI-powered video analysis using Gemini 2.0 for viral content detection and automated Instagram/YouTube Shorts generation.</p>
+                        <div class="project-tech">
+                            <span class="tag">Gemini AI</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Celery</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="freelance">
+                    <div class="project-header">
+                        <h3 class="project-title">Fitometer - Gym Management</h3>
+                        <p class="project-type">Freelance - SaaS Platform</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Multi-tenant gym management system with separate schemas per organization, JWT authentication, and comprehensive management features.</p>
+                        <div class="project-tech">
+                            <span class="tag">Django Tenants</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="freelance ai">
+                    <div class="project-header">
+                        <h3 class="project-title">Multi-Agent AI System</h3>
+                        <p class="project-type">Freelance - AI Automation</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">LLM-based agent orchestration system for dynamic agent creation and complex workflow automation using OpenAI Assistants API.</p>
+                        <div class="project-tech">
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">Agent Orchestration</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="freelance ai">
+                    <div class="project-header">
+                        <h3 class="project-title">Face Detection & Recognition</h3>
+                        <p class="project-type">Freelance - Computer Vision</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Security camera facial recognition system using YOLOv8, FaceNet, and InceptionV3 with cosine similarity matching.</p>
+                        <div class="project-tech">
+                            <span class="tag">YOLOv8</span>
+                            <span class="tag">FaceNet</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Django</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="freelance">
+                    <div class="project-header">
+                        <h3 class="project-title">E-Commerce Backend</h3>
+                        <p class="project-type">Freelance - Full-Stack</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Complete e-commerce platform with PayPal integration, email notifications, and admin panel for product management.</p>
+                        <div class="project-tech">
+                            <span class="tag">Django</span>
+                            <span class="tag">PayPal API</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="freelance">
+                    <div class="project-header">
+                        <h3 class="project-title">Custom Cloud Service Platform</h3>
+                        <p class="project-type">Freelance - Backend Architecture</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Built a complete cloud service platform from scratch using microservice architecture with Django, Express.js, RabbitMQ, MongoDB, and Socket.IO for real-time communication.</p>
+                        <div class="project-tech">
+                            <span class="tag">Django</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">RabbitMQ</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Socket.IO</span>
+                            <span class="tag">Microservices</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Personal Projects -->
+                <div class="project-card" data-category="freelance ai">
+                    <div class="project-header">
+                        <h3 class="project-title">Text-to-Video GPU Processing Fix</h3>
+                        <p class="project-type">Freelance - AI/ML Debugging</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Resolved critical code issues in production text-to-video conversion application running on GPU-enabled VMs, ensuring optimal performance.</p>
+                        <div class="project-tech">
+                            <span class="tag">GPU Computing</span>
+                            <span class="tag">Video Processing</span>
+                            <span class="tag">VM Debugging</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="freelance">
+                    <div class="project-header">
+                        <h3 class="project-title">Frontend Token Management Fix</h3>
+                        <p class="project-type">Freelance - Frontend Debugging</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Diagnosed and resolved critical token persistence issues in production frontend application where authentication tokens were not being saved properly.</p>
+                        <div class="project-tech">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Token Management</span>
+                            <span class="tag">Frontend Debugging</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="personal ai research">
+                    <div class="project-header">
+                        <h3 class="project-title">Dense Text Retrieval Research</h3>
+                        <p class="project-type">PhD Research - Information Retrieval</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Developing advanced information retrieval models using Knowledge Distillation, Cross-Encoders, and Dual Encoders for dense text retrieval.</p>
+                        <div class="project-tech">
+                            <span class="tag">Knowledge Distillation</span>
+                            <span class="tag">Cross-Encoder</span>
+                            <span class="tag">Dual Encoder</span>
+                            <span class="tag">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="personal ai">
+                    <div class="project-header">
+                        <h3 class="project-title">LinkedIn Job Scraper with AI</h3>
+                        <p class="project-type">Personal - AI/Automation</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Automated job analysis tool using local LLMs (Qwen) to identify hiring posts and extract contact information from LinkedIn.</p>
+                        <div class="project-tech">
+                            <span class="tag">Selenium</span>
+                            <span class="tag">Qwen LLM</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="personal ai">
+                    <div class="project-header">
+                        <h3 class="project-title">AI Resume-Job Matcher</h3>
+                        <p class="project-type">Personal - AI Platform</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Intelligent matching platform using Groq API for resume parsing and compatibility scoring with personalized cover letter generation.</p>
+                        <div class="project-tech">
+                            <span class="tag">Django</span>
+                            <span class="tag">Groq API</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="personal">
+                    <div class="project-header">
+                        <h3 class="project-title">MetricMint</h3>
+                        <p class="project-type">Personal - Data Visualization</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Statistics publishing platform with 30+ interactive chart types using Highcharts and full-text search capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tag">Django</span>
+                            <span class="tag">Highcharts</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="personal">
+                    <div class="project-header">
+                        <h3 class="project-title">College Placement System</h3>
+                        <p class="project-type">Personal - Full-Stack</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Comprehensive placement management platform with student portal, officer dashboard, and recruiter integration.</p>
+                        <div class="project-tech">
+                            <span class="tag">Django</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">DataTables</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="personal">
+                    <div class="project-header">
+                        <h3 class="project-title">Cryptocurrency Tracker</h3>
+                        <p class="project-type">Personal - Automation</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Automated crypto price tracking with Google Sheets integration for historical analysis and trend monitoring.</p>
+                        <div class="project-tech">
+                            <span class="tag">Python</span>
+                            <span class="tag">CoinGecko API</span>
+                            <span class="tag">Google Sheets</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="personal">
+                    <div class="project-header">
+                        <h3 class="project-title">Digimarket</h3>
+                        <p class="project-type">Personal - E-Learning Platform</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Dual-purpose platform for digital marketing services and video-based e-learning with progress tracking.</p>
+                        <div class="project-tech">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog & Writing Section -->
+    <section id="blog" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Technical Writing & Blogs</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.1rem;">
+                I share my knowledge and experience through technical blogs, tutorials, and articles on software development, AI/ML, and problem-solving.
+            </p>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">📝</div>
+                    <h3>WordPress Blog</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">
+                        Technical articles and tutorials on software development, AI/ML, and emerging technologies
+                    </p>
+                    <a href="https://harshitkalucha37271988.wordpress.com" target="_blank" class="btn btn-primary" style="display: inline-block; padding: 0.5rem 1.5rem; font-size: 0.9rem; margin-top: 0.5rem;">
+                        Visit Blog
+                    </a>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">💼</div>
+                    <h3>LinkedIn Articles</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">
+                        Professional insights and best practices in software engineering
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://www.linkedin.com/pulse/centralized-exception-handling-using-middleware-harshit-kalucha-p0fde" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 600; display: block; margin-bottom: 0.5rem;">
+                            → Centralized Exception Handling Using Middleware
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🎯</div>
+                    <h3>Writing Topics</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Backend Development</span>
+                        <span class="tag">Best Practices</span>
+                        <span class="tag">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 2rem;">
+                    I'm available for freelance projects and full-time opportunities. Let's discuss how I can help bring your ideas to life with cutting-edge AI/ML solutions and robust backend development.
+                </p>
+                
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:kaluchaharshit22@gmail.com">kaluchaharshit22@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <a href="tel:+918447091711">+91 8447091711</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Delhi, India</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="harshit-kalucha-49b197191" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/harshit-kalucha-49b197191?trk=profile-badge"></a></div>
+                                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/harshit-coder" target="_blank" title="GitHub">💻</a>
+            <a href="https://linkedin.com/in/harshit-kalucha-49b197191" target="_blank" title="LinkedIn">🔗</a>
+            <a href="https://harshitkalucha37271988.wordpress.com" target="_blank" title="Blog">📝</a>
+            <a href="mailto:kaluchaharshit22@gmail.com" title="Email">📧</a>
+        </div>
+        <p>&copy; 2025 Harshit Kalucha. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        function filterProjects(category) {
+            const projects = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            projects.forEach(project => {
+                if (category === 'all' || project.dataset.category.includes(category)) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+        
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+
+</body>
+</html>
