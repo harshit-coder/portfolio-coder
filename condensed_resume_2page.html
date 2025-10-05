@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Kalucha - Resume</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0.5cm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 9pt;
+            line-height: 1.3;
+            color: #000;
+            background: white;
+        }
+        
+        .container {
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 0.5cm;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 0.3cm;
+            padding-bottom: 0.2cm;
+            border-bottom: 2px solid #000;
+        }
+        
+        h1 {
+            font-size: 18pt;
+            font-weight: bold;
+            margin-bottom: 0.1cm;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            font-size: 10pt;
+            font-weight: normal;
+            margin-bottom: 0.15cm;
+        }
+        
+        .contact {
+            font-size: 8.5pt;
+            margin-bottom: 0.1cm;
+        }
+        
+        .section {
+            margin-bottom: 0.35cm;
+        }
+        
+        .section-title {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-bottom: 0.15cm;
+            padding-bottom: 0.05cm;
+            border-bottom: 1.5px solid #000;
+            text-transform: uppercase;
+        }
+        
+        .job, .project-item {
+            margin-bottom: 0.25cm;
+        }
+        
+        .job-header {
+            font-weight: bold;
+            margin-bottom: 0.05cm;
+        }
+        
+        .company {
+            font-weight: bold;
+        }
+        
+        .duration {
+            font-style: italic;
+            font-size: 8.5pt;
+        }
+        
+        ul {
+            margin-left: 0.4cm;
+            margin-top: 0.05cm;
+        }
+        
+        li {
+            margin-bottom: 0.08cm;
+            font-size: 9pt;
+        }
+        
+        .skills-content {
+            font-size: 9pt;
+            line-height: 1.4;
+        }
+        
+        .skill-category {
+            margin-bottom: 0.1cm;
+        }
+        
+        .education-item {
+            margin-bottom: 0.12cm;
+            font-size: 9pt;
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .container {
+                padding: 0.3cm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>HARSHIT KALUCHA</h1>
+            <h2>AI INTEGRATION ENGINEER | FULL-STACK DEVELOPER | TECHNICAL WRITER</h2>
+            <div class="contact">
+                Email: kaluchaharshit22@gmail.com | GitHub: harshit-coder | Contact: +91 8447091711 | Location: Laxmi Nagar, Delhi-92<br>
+                LinkedIn: harshit-kalucha-49b197191 | Blog: harshitkalucha37271988.wordpress.com
+            </div>
+        </header>
+
+        <!-- Skills -->
+        <div class="section">
+            <div class="section-title">SKILLS</div>
+            <div class="skills-content">
+                <div class="skill-category"><strong>Backend:</strong> Python | Django | Django Tenants | REST API | GraphQL | Flask | FastAPI | Celery | RabbitMQ | Prefect</div>
+                <div class="skill-category"><strong>Frontend:</strong> HTML | CSS | JavaScript | React | Next.js | Bootstrap</div>
+                <div class="skill-category"><strong>AI/ML:</strong> Machine Learning | Deep Learning | LLMs | NLP | Information Retrieval | Dense Text Retrieval | Knowledge Distillation | Cross-Encoders | Dual Encoders | LangChain | PyTorch | TensorFlow | Computer Vision | YOLO | FaceNet | Gemini</div>
+                <div class="skill-category"><strong>Database:</strong> PostgreSQL | MySQL | MongoDB | Redis | SQLite</div>
+                <div class="skill-category"><strong>Cloud & DevOps:</strong> AWS (Lambda, EC2, EKS, S3) | Azure (Function App, Eventhub) | Docker | Kubernetes | GitHub Actions | Jenkins | Ansible | CI/CD Pipelines</div>
+                <div class="skill-category"><strong>Tools:</strong> Git | Selenium | Postman | Solr | SolrCloud | Zookeeper | Socket.IO | Fluentd</div>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">PROFESSIONAL EXPERIENCE</div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="company">AI INTEGRATION ENGINEER</span> | First Advantage | <span class="duration">May 2024 - Present</span>
+                </div>
+                <ul>
+                    <li><strong>PACER Identifier Extractor:</strong> Built automated text extraction system using Prefect, Deepdoctection & Azure services for criminal documents | Applied regex & LLMs to identify/map key identifiers | Returned extracted data to client</li>
+                    <li><strong>PACER Name Matching:</strong> Enhanced name matching using phonetic & fuzzy algorithms | Leveraged LLMs for text extraction | Fetched criminal identifiers from court records</li>
+                    <li><strong>Employee-Institute Name Matching:</strong> Developed NLP-based Azure Function App for name matching | Analyzed text similarity algorithms | Created custom name embedding techniques</li>
+                    <li><strong>AI-Based Employer Verification Routing:</strong> Fixed Kubernetes secret services issues | Managed on-premise deployment</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="company">SOFTWARE DEVELOPER</span> | NextGen Invent | <span class="duration">April 2022 - October 2025</span>
+                </div>
+                <ul>
+                    <li><strong>Social Travel App:</strong> Restructured backend using Django-GraphQL & PostgreSQL | Automated Postman testing with JavaScript | Integrated payment APIs (Stripe, PayPal, Trolley) | Resolved memory leaks | Deployed ASGI server using Gunicorn & Uvicorn | Implemented Docker | Ensured secure payment data transmission</li>
+                    <li><strong>Cannabis Data Analytics Dashboard:</strong> Developed login/logout features for React.js dashboard | Managed session storage & Power BI tokens in local storage</li>
+                    <li><strong>Search Engine:</strong> Setup Solr Cloud & Zookeeper ensemble using PowerShell & Flask | Developed title scoring script using TF-IDF with penalty structures</li>
+                    <li><strong>GPU-Optimized Chatbot POC:</strong> Developed chatbot using LLAMA-2 & Chainlit for enhanced processing speed & efficiency</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="company">FULL-TIME INTERN</span> | ZestIoT | <span class="duration">July 2021 - January 2022</span>
+                </div>
+                <ul>
+                    <li><strong>No-Code AI Platform:</strong> Developed real-time video uploading & compression system using Flask, FastAPI & Celery | Integrated RabbitMQ for notifications & IoT edge server communication | Implemented image training using YOLO object detection</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Freelance Projects -->
+        <div class="section">
+            <div class="section-title">FREELANCE PROJECTS</div>
+            
+            <div class="project-item">
+                <strong>Fitometer - Gym Management System:</strong> Backend developer for multi-tenant gym management app | Implemented Django Tenants with separate PostgreSQL schemas per organization | Built authentication/authorization using JWT & refresh tokens | Developed attendance tracking, employee management, member details & exercise management | Deployed at fitometer.club
+            </div>
+            
+            <div class="project-item">
+                <strong>Social Media Video Clip Generator (Diyung AI Labs):</strong> AI-powered video analysis using Gemini 2.0 Flash for viral content detection | Built FastAPI async service with Celery & Docker | Created 8 analysis modes (captions, summaries, key moments, tables, haikus, charts, custom prompts) | Developed gaming cutscene detection | Automated Instagram/YouTube Shorts generation from long-form videos
+            </div>
+            
+            <div class="project-item">
+                <strong>Multi-Agent AI System (Azeosoft):</strong> Fixed critical bugs in LLM agent-based application using VRSEN/agency-swarm framework | Implemented CEO agent for task management, Developer agent for coding & Virtual Assistant | Built agents with file operations, code execution & terminal commands | Enabled multi-agent communication flows for workflow automation
+            </div>
+            
+            <div class="project-item">
+                <strong>Face Detection & Recognition (AitecServ):</strong> Django-based security camera facial recognition backend | Multi-model approach: YOLOv8 for detection, FaceNet for embeddings, InceptionV3 for verification | Cosine similarity-based matching with configurable thresholds | PostgreSQL storage for binary embeddings | Encrypted model files using Fernet cipher | Batch processing API with separate folders for recognized/unrecognized faces
+            </div>
+            
+            <div class="project-item">
+                <strong>E-Commerce Platform Backend (Megadolls):</strong> Integrated PayPal payment gateway & resolved payment issues | Setup three-tier environment (dev, staging, production) | Fixed email notification system | Managed team using Jira & sprint planning | Built admin panel for website design management, products & customer payments
+            </div>
+            
+            <div class="project-item">
+                <strong>Custom Cloud Service Platform (Xbattery Energy):</strong> Built complete cloud service platform from scratch using microservice architecture | Implemented Socket.IO, consumer-producer pattern & Express.js for async S3 bucket creation | Designed database structure using MongoDB & PostgreSQL | Created Django admin tool for PostgreSQL management | Setup on-premise servers
+            </div>
+            
+            <div class="project-item">
+                <strong>Python Training (bridge2success):</strong> Corporate trainer teaching Python for data analysis & data science | Conducted 1-2 month batches with hands-on practical sessions
+            </div>
+            
+            <div class="project-item">
+                <strong>Serverless vs Server-full Comparison (Research Pixie):</strong> Deployed identical apps: FastAPI (server-full) vs Azure Function App (serverless) | Setup AWS Lambda, DynamoDB & Azure API Management | Conducted JMeter load testing to compare speed, performance & pricing
+            </div>
+            
+            <div class="project-item">
+                <strong>Text-to-Video GPU Processing Fix:</strong> Resolved critical code issues in production text-to-video conversion application running on GPU-enabled VMs | Ensured optimal performance on GPU infrastructure
+            </div>
+            
+            <div class="project-item">
+                <strong>Frontend Token Management Fix:</strong> Diagnosed & resolved critical token persistence issues in production frontend where authentication tokens were not being saved properly
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Personal Projects -->
+        <div class="section">
+            <div class="section-title">PERSONAL PROJECTS</div>
+            
+            <div class="project-item">
+                <strong>AI-Powered LinkedIn Scraper for Job Analysis:</strong> Built 3 versions: basic scraper, llama.cpp integration & Transformers (Qwen/Phi models) | Implemented undetected Chrome driver to bypass bot detection | Used local LLMs (Qwen 2.5) to identify hiring posts & extract contact information | Automated email & phone extraction with regex & AI verification | Generated Excel reports & PDF summaries with hiring statistics
+            </div>
+            
+            <div class="project-item">
+                <strong>AI Resume-Job Matcher:</strong> PDF/DOCX/TXT resume parsing using pdfplumber & python-docx | Groq API (gemma2-9b-it) for structured data extraction into JSON | Match scoring algorithm (0-100%) for candidate-job compatibility | Personalized cover letter generation using LLMs | Django REST backend with JWT authentication & Streamlit frontend
+            </div>
+            
+            <div class="project-item">
+                <strong>Cryptocurrency Price Tracker:</strong> CoinGecko API integration for real-time prices (BTC, ETH, XRP, LTC, ADA) | Google Sheets API with OAuth 2.0 for automated logging | Multi-environment support (DEV, STAGE, PROD) | Historical price tracking with timestamps
+            </div>
+            
+            <div class="project-item">
+                <strong>MetricMint - Statistics Publishing Platform:</strong> Data journalism platform with interactive visualization using Highcharts (30+ chart types) | CSV upload & manual data entry | Full-text search across titles, descriptions, categories & dates | Admin panel for content management | Search analytics | Deployed at metricmint.pythonanywhere.com
+            </div>
+            
+            <div class="project-item">
+                <strong>Digimarket - E-Learning & Digital Marketing Platform:</strong> Video-based e-learning with progress tracking | User authentication with session management & view history | Admin panel for CRUD operations on courses, blogs & projects | PHPMailer SMTP integration | Course categorization with multi-topic sequential learning
+            </div>
+            
+            <div class="project-item">
+                <strong>BPIBS College Placement Management System:</strong> Student portal with profile management & skill tracking | Placement officer dashboard with notification system & student filtering | Interactive 3D charts using Highcharts | DataTables for sortable/searchable student data | Excel import/export using django-import-export & openpyxl | Recruiter contact form
+            </div>
+            
+            <div class="project-item">
+                <strong>NGO Data Scraping Tool (Youth Empowerment Foundation):</strong> Selenium-based scraper for ngodarpan.gov.in with batch processing | FastAPI web interface with HTML templates | Background task processing with randomized delays | Excel export using openpyxl | JSON file storage
+            </div>
+            
+            <div class="project-item">
+                <strong>CourseDir - Educational Course Recommender:</strong> Timed quiz system with automatic skill level assessment | AJAX-based quiz submission | Personalized math course recommendations (Beginner/Intermediate/Advanced) | MixItUp.js for dynamic filtering | SMTP email integration
+            </div>
+            
+            <div class="project-item">
+                <strong>College Timetable Manager (ARSD):</strong> AJAX-based room availability checking to prevent conflicts | Multi-criteria search: room-wise, faculty-wise, course-wise | Client-side Excel export using SheetJS with automatic cell merging | Django inline formsets | AdminLTE dashboard
+            </div>
+            
+            <div class="project-item">
+                <strong>Appointment Bot with Data Scraping:</strong> Fixed fake email validation & OTP security bugs | Web scraping for visa appointment availability | Database storage for appointment details
+            </div>
+        </div>
+
+        <!-- Research Work -->
+        <div class="section">
+            <div class="section-title">RESEARCH WORK</div>
+            <div class="project-item">
+                <strong>Dense Text Retrieval using Knowledge Distillation:</strong> PhD research on Information Retrieval | Developing advanced models using Knowledge Distillation, Cross-Encoders & Dual Encoders | Focus on improving dense retrieval performance for large-scale text search
+            </div>
+        </div>
+
+        <!-- Technical Writing -->
+        <div class="section">
+            <div class="section-title">TECHNICAL WRITING & BLOGS</div>
+            <div class="project-item">
+                <strong>WordPress Blog:</strong> harshitkalucha37271988.wordpress.com | Technical articles on software development, AI/ML & emerging technologies<br>
+                <strong>LinkedIn Articles:</strong> Published "Centralized Exception Handling Using Middleware" & other professional insights on software engineering best practices<br>
+                <strong>Topics:</strong> Django | Python | AI/ML | Backend Development | Best Practices | Problem Solving
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">EDUCATION</div>
+            <div class="education-item">
+                <strong>Ph.D. in Computer Science</strong> | Jaypee Institute of Information Technology | July 2024 - July 2028 (Expected)<br>
+                <strong>Research Focus:</strong> Information Retrieval, Dense Text Retrieval, Knowledge Distillation, Cross-Encoders, Dual Encoders
+            </div>
+            <div class="education-item">
+                <strong>PG Diploma in Machine Learning & NLP</strong> | DataTrained | 2023 - 2024
+            </div>
+            <div class="education-item">
+                <strong>Master of Computer Applications (MCA)</strong> | Bhai Parmanand Institute of Business Studies, GGSIPU | Jan 2019 - Jun 2022
+            </div>
+            <div class="education-item">
+                <strong>Bachelor of Science - Physical Science (Electronics)</strong> | Atma Ram Sanatan Dharma College, University of Delhi | 2016 - 2019
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section">
+            <div class="section-title">CERTIFICATIONS & TRAINING</div>
+            <div style="font-size: 9pt;">
+                Full Stack Data Science & Computer Vision (iNeuron) | Docker & Git (iNeuron) | ReactJs, React Native & GraphQL (Udemy) | Full Stack Python - Django (Ducat) | Prompt Engineering (Udemy)
+            </div>
+        </div>
+    </div>
+</body>
+</html>
